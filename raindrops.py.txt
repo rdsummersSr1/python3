@@ -1,0 +1,26 @@
+﻿def convert(number):
+   result = ''
+   if number == 1:
+       return str(number)
+   if number % 3 == 0 and number % 5 == 0 and number % 7 == 0:
+      result += 'Pling' + 'Plang' + 'Plong'
+      print('1',result)
+   elif number % 3 == 0 and number % 5 == 0 and number % 7 != 0:
+      result += 'Pling' + 'Plang'
+      print('2',result)
+   elif number % 3 == 0 and number % 5 != 0 and number % 7 != 0:
+      result += 'Pling'
+      print('3',result)
+   elif number % 3 == 0 and number % 5 != 0 and number % 7 == 0:
+      result += 'Pling' + 'Plong'
+   elif number % 3 != 0 and number % 5 != 0 and number % 7 == 0:
+      result +=  'Plong'
+   elif number % 3 != 0 and number % 5 != 0 and number % 7 != 0:
+      result +=  str(number)
+      print(result)
+   elif number % 3 != 0 and number % 5 == 0 and number % 7 != 0: 
+      result += 'Plang' 
+      print('3',result)
+   elif number % 3 != 0 and number % 5 == 0 and number % 7 == 0: 
+      result += 'Plang' + 'Plong'
+      print('3',result)
